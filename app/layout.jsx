@@ -31,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <title>Advanced React Examples</title>
+        <title>React Examples</title>
         <meta name="description" content="Advanced React Examples" />
       </head>
       <body
@@ -75,7 +75,7 @@ export default function RootLayout({
             ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full md:translate-x-0'}
           `}>
             <h1 className="mb-6 text-2xl font-bold text-gray-100 mt-12 md:mt-0">
-              React Learning
+              <Link href="/">React Learning</Link>
             </h1>
             <nav>
               <ul className="space-y-3">

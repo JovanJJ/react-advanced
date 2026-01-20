@@ -11,7 +11,7 @@ function UseStateExample() {
         <div className="rounded-lg border border-gray-700 bg-[#2A2A2A] p-6 shadow-md">
             <h3 className="mb-2 text-xl font-semibold text-gray-200">1. useState</h3>
             <p className="mb-4 text-gray-400">
-                <code>useState</code> adds state to function components. It returns the current state and a function to update it.
+                <code>useState</code>  useState is used to store and update data that changes over time and causes the component to re-render.
             </p>
 
             <div className="flex items-center gap-4">
@@ -61,7 +61,7 @@ function UseEffectExample() {
         <div className="rounded-lg border border-gray-700 bg-[#2A2A2A] p-6 shadow-md">
             <h3 className="mb-2 text-xl font-semibold text-gray-200">2. useEffect</h3>
             <p className="mb-4 text-gray-400">
-                <code>useEffect</code> handles side effects like data fetching, subscriptions, or DOM manipulation.
+                <code>useEffect</code> useEffect is used to run code after a component renders, such as fetching data or reacting to state changes.
             </p>
 
             <div className="rounded bg-gray-800 p-4 text-gray-200">
@@ -93,7 +93,7 @@ function UseRefExample() {
         <div className="rounded-lg border border-gray-700 bg-[#2A2A2A] p-6 shadow-md">
             <h3 className="mb-2 text-xl font-semibold text-gray-200">3. useRef</h3>
             <p className="mb-4 text-gray-400">
-                <code>useRef</code> persists values between renders without causing re-renders, or accesses DOM elements directly.
+                <code>useRef</code> useRef is used to keep a value or access a DOM element without causing the component to re-render. It returns a mutable object with a .current property that persists between re-renders.
             </p>
 
             <div className="flex flex-col gap-4 sm:flex-row">
@@ -146,7 +146,7 @@ function UseContextExample() {
         <div className="rounded-lg border border-gray-700 bg-[#2A2A2A] p-6 shadow-md">
             <h3 className="mb-2 text-xl font-semibold text-gray-200">4. useContext</h3>
             <p className="mb-4 text-gray-400">
-                <code>useContext</code> allows you to subscribe to context changes. It avoids "prop drilling" by passing data through the component tree.
+                <code>useContext</code> useContext is used to access data from a React context anywhere in your component without passing props manually.
             </p>
 
             {/* Provider wraps the part of the tree that needs access */}
