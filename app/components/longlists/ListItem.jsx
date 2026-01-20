@@ -1,7 +1,7 @@
 import { memo } from 'react';
 
 const ListItem = ({ item }) =>
-<div className="p-2 border-b border-gray-200 text-black">
+<div className="p-2 border-b border-gray-700 text-gray-100">
     {item.name}
   </div>;
 

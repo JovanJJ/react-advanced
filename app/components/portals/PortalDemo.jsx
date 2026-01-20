@@ -21,7 +21,7 @@ function ModalWithPortal({ open, onClose, children }) {
   if (!open || !portalRoot) return null;
   return ReactDOM.createPortal(
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40">
-      <div className="bg-white rounded shadow-lg p-6 min-w-[300px] text-black">
+      <div className="bg-[#2A2A2A] rounded shadow-lg p-6 min-w-[300px] text-gray-100">
         {children}
         <button className="mt-4 px-4 py-2 rounded bg-blue-600 text-white" onClick={onClose}>Close</button>
       </div>
@@ -34,7 +34,7 @@ function ModalNoPortal({ open, onClose, children }) {
   if (!open) return null;
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40">
-      <div className="bg-white rounded shadow-lg p-6 min-w-[300px] text-black">
+      <div className="bg-[#2A2A2A] rounded shadow-lg p-6 min-w-[300px] text-gray-100">
         {children}
         <button className="mt-4 px-4 py-2 rounded bg-blue-600 text-white" onClick={onClose}>Close</button>
       </div>

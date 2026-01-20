@@ -10,7 +10,7 @@ export default function ActionStateForm() {
   return (
     <form action={formAction} className="space-y-4 text-sm">
       <div className="flex items-end gap-3">
-        <label className="flex flex-col text-xs font-medium text-gray-600">
+        <label className="flex flex-col text-xs font-medium text-gray-400">
           Step (&lt;=5)
           <input
             type="number"
@@ -18,20 +18,20 @@ export default function ActionStateForm() {
             min={1}
             max={10}
             defaultValue={1}
-            className="mt-1 w-24 rounded border bg-white text-gray-900 placeholder-gray-400 px-2 py-1 text-sm outline-none focus:ring-2 focus:ring-blue-500" />
+            className="mt-1 w-24 rounded border bg-[#2A2A2A] text-gray-100 placeholder-gray-400 px-2 py-1 text-sm outline-none focus:ring-2 focus:ring-blue-500" />
           
         </label>
         <button
           type="submit"
           disabled={isPending}
-          className="rounded bg-blue-600 px-4 py-2 text-white font-medium hover:bg-blue-500 disabled:opacity-50">
+          className="rounded bg-blue-600 px-4 py-2 text-white font-medium hover:bg-blue-600 disabled:opacity-50">
           
           {isPending ? "Submitting..." : "Increment"}
         </button>
       </div>
-      <div className="rounded border bg-gray-50 p-3">
-        <div className="font-semibold mb-1 text-black">Result</div>
-        <div className="text-[13px] text-black">
+      <div className="rounded border bg-[#1F1F1F] p-3">
+        <div className="font-semibold mb-1 text-gray-100">Result</div>
+        <div className="text-[13px] text-gray-100">
           Count: <span className="font-mono">{state.count}</span>
         </div>
         {state.message && !state.error &&

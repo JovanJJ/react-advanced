@@ -10,7 +10,7 @@ export default function ProfilerPage() {
 
   return (
     <div>
-      <h1 className="mb-6 text-3xl font-bold text-gray-800">Profiler</h1>
+      <h1 className="mb-6 text-3xl font-bold text-gray-200">Profiler</h1>
       <div className="mb-6 flex flex-wrap gap-3">
         <TabButton
           isActive={tab === "profiler-simple/without"}
@@ -32,7 +32,7 @@ export default function ProfilerPage() {
         </TabButton>
       </div>
 
-      <div className="rounded-lg bg-white p-6 shadow-md" style={{ contain: "content" }}>
+      <div className="rounded-lg bg-[#2A2A2A] p-6 shadow-md" style={{ contain: "content" }}>
         <ProfilerSimple tab={contentTab} />
       </div>
     </div>);

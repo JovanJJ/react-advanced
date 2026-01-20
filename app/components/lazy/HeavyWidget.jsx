@@ -71,7 +71,7 @@ export default function HeavyWidget({ variant }) {
           </button>
           <button
             onClick={() => setSeed((s) => s + 1)}
-            className="rounded bg-blue-600 px-2.5 py-1 text-[11px] font-medium text-white hover:bg-blue-500">
+            className="rounded bg-blue-600 px-2.5 py-1 text-[11px] font-medium text-white hover:bg-blue-600">
             
             New data
           </button>
@@ -80,7 +80,7 @@ export default function HeavyWidget({ variant }) {
       <p className="text-[11px] leading-snug text-gray-500 max-w-prose">
         Imports <code>chart.js</code> to add bundle weight. Use <code>Add points</code> to grow series, <code>New data</code> to regenerate.
       </p>
-      <div className="rounded border bg-white p-2">
+      <div className="rounded border bg-[#2A2A2A] p-2">
         <canvas ref={canvasRef} className="" style={{ height: '100px' }} />
       </div>
       <div className="text-[10px] text-gray-400">pts={points} seed={seed}</div>

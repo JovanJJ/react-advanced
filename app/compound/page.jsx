@@ -59,12 +59,12 @@ export default function VanillaTabs() {
 export default function CompoundPage() {
   return (
     <div>
-      <h1 className="mb-4 text-3xl font-bold text-gray-800">Compound Components</h1>
-      <p className="mb-6 max-w-prose text-gray-600 text-sm">
+      <h1 className="mb-4 text-3xl font-bold text-gray-200">Compound Components</h1>
+      <p className="mb-6 max-w-prose text-gray-400 text-sm">
         Compound components let you build flexible, declarative APIs for UI primitives like Tabs, Accordions, etc.
         Compare a compound Tabs implementation to a vanilla approach.
       </p>
-      <div className="rounded-lg bg-white p-6 shadow mb-6" style={{ contain: 'content' }}>
+      <div className="rounded-lg bg-[#2A2A2A] p-6 shadow mb-6" style={{ contain: 'content' }}>
         <CompoundTabsDemo />
       </div>
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2">

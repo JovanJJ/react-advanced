@@ -14,18 +14,18 @@ function delay(ms) {
 async function DataBlock() {
   await delay(1500);
   return (
-    <div className="rounded border border-gray-200 bg-white p-4 text-gray-800">
+    <div className="rounded border border-gray-700 bg-[#2A2A2A] p-4 text-gray-200">
             <div className="text-lg font-semibold">Data loaded (server)</div>
-            <div className="mt-1 text-sm text-gray-600">Matches fallback layout to minimize CLS.</div>
+            <div className="mt-1 text-sm text-gray-400">Matches fallback layout to minimize CLS.</div>
         </div>);
 
 }
 
 function PlaceholderBlock() {
   return (
-    <div className="rounded border border-gray-200 bg-white p-4 text-gray-800">
+    <div className="rounded border border-gray-700 bg-[#2A2A2A] p-4 text-gray-200">
             <div className="text-lg font-semibold opacity-60">Data loading…</div>
-            <div className="mt-1 min-h-6 text-sm text-gray-600 opacity-50">Default text with lower opacity to reduce layout shift.</div>
+            <div className="mt-1 min-h-6 text-sm text-gray-400 opacity-50">Default text with lower opacity to reduce layout shift.</div>
         </div>);
 
 }
@@ -36,7 +36,7 @@ export default function SuspenseServerExample({ tab }) {
 
   return (
     <div className="space-y-4">
-            <div className="rounded-md border border-blue-100 bg-blue-50 p-3 text-sm text-blue-900">
+            <div className="rounded-md border border-blue-800 bg-blue-900 p-3 text-sm text-blue-100">
                 <div className="font-semibold">Server-side Suspense</div>
                 <ul className="list-disc space-y-1 pl-5">
                     <li>
@@ -91,7 +91,7 @@ export default function SuspenseServerExample({ tab }) {
           '  return (',
           '    <div className="rounded border p-4">',
           '      <div className="text-lg font-semibold">Data loaded (server)</div>',
-          '      <div className="mt-1 text-sm text-gray-600">Matches fallback layout to lower CLS.</div>',
+          '      <div className="mt-1 text-sm text-gray-400">Matches fallback layout to lower CLS.</div>',
           '    </div>',
           '  );',
           '}'].

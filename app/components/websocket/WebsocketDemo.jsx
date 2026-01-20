@@ -31,11 +31,11 @@ export default function WebsocketDemo() {
           value={input}
           onChange={(e) => setInput(e.target.value)}
           placeholder="Type message..."
-          className="flex-1 rounded border bg-white text-gray-900 placeholder-gray-400 px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-blue-500" />
+          className="flex-1 rounded border bg-[#2A2A2A] text-gray-100 placeholder-gray-400 px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-blue-500" />
         
         <button
           type="submit"
-          className="rounded bg-blue-600 px-4 py-2 text-white text-sm font-medium hover:bg-blue-500 disabled:opacity-50"
+          className="rounded bg-blue-600 px-4 py-2 text-white text-sm font-medium hover:bg-blue-600 disabled:opacity-50"
           disabled={!input.trim()}>
           
           Send
@@ -45,13 +45,13 @@ export default function WebsocketDemo() {
       {error && <div className="text-xs text-red-600">Error: {error.message}</div>}
       <div
         ref={listRef}
-        className="h-56 overflow-auto rounded border bg-gray-50 p-2 text-[12px] leading-relaxed text-gray-800">
+        className="h-56 overflow-auto rounded border bg-[#1F1F1F] p-2 text-[12px] leading-relaxed text-gray-200">
         
         {messages.length === 0 &&
         <div className="text-gray-400">No messages yet. Send one!</div>
         }
         {messages.map((m, i) =>
-        <div key={i} className="mb-1 whitespace-pre-wrap break-words text-gray-900">
+        <div key={i} className="mb-1 whitespace-pre-wrap break-words text-gray-100">
             <span className="font-mono text-[10px] text-gray-400 mr-1">{i + 1}.</span>
             {m}
           </div>

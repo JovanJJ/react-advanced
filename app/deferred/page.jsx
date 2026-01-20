@@ -10,7 +10,7 @@ export default function DeferredPage() {
 
   return (
     <div>
-      <h1 className="mb-6 text-3xl font-bold text-gray-800">useDeferredValue</h1>
+      <h1 className="mb-6 text-3xl font-bold text-gray-200">useDeferredValue</h1>
       <div className="mb-6 flex flex-wrap gap-3">
         <TabButton
           isActive={tab === "deferred/without"}
@@ -32,7 +32,7 @@ export default function DeferredPage() {
         </TabButton>
       </div>
 
-      <div className="rounded-lg bg-white p-6 shadow-md" style={{ contain: "content" }}>
+      <div className="rounded-lg bg-[#2A2A2A] p-6 shadow-md" style={{ contain: "content" }}>
         <DeferredLists tab={contentTab} />
       </div>
     </div>);

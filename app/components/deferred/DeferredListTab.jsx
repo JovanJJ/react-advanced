@@ -34,14 +34,14 @@ const HeavyList = ({ items }) =>
 const DeferredListTab = ({ mode, items, isStale }) => {
   return (
     <div>
-      <h2 className="mb-4 text-2xl font-semibold text-gray-700">{headings[mode]}</h2>
-      <p className="mb-4 text-gray-600">{descriptions[mode]}</p>
+      <h2 className="mb-4 text-2xl font-semibold text-gray-300">{headings[mode]}</h2>
+      <p className="mb-4 text-gray-400">{descriptions[mode]}</p>
       {isStale &&
       <p className="mb-2 text-sm text-gray-500">List updating…</p>
       }
       <HeavyList items={items} />
       <div className="mt-6">
-        <h3 className="mb-2 text-sm font-semibold text-gray-700">Code example</h3>
+        <h3 className="mb-2 text-sm font-semibold text-gray-300">Code example</h3>
         <pre className="overflow-auto rounded-md bg-gray-900 p-4 text-xs text-gray-100">
           <code>{[
             '"use client";',

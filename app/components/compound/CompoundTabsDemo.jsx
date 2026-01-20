@@ -27,7 +27,7 @@ function Tab({ value, children }) {
   const selected = ctx.value === value;
   return (
     <button
-      className={`px-4 py-2 rounded font-semibold transition-colors ${selected ? "bg-blue-600 text-white" : "bg-gray-200 text-gray-700 hover:bg-blue-400 hover:text-white"}`}
+      className={`px-4 py-2 rounded font-semibold transition-colors ${selected ? "bg-blue-600 text-white" : "bg-gray-700 text-gray-300 hover:bg-blue-400 hover:text-white"}`}
       onClick={() => ctx.setValue(value)}
       id={`tab-${value}`}>
       
@@ -42,7 +42,7 @@ function TabPanel({ value, children }) {
   const selected = ctx.value === value;
   return selected ?
   <div
-    className="p-4 bg-gray-50 rounded border mt-2 text-black"
+    className="p-4 bg-[#1F1F1F] rounded border mt-2 text-gray-100"
     role="tabpanel"
     id={`tabpanel-${value}`}>
     

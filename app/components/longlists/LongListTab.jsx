@@ -45,8 +45,8 @@ const HeavyList = function HeavyList({ items }) {
 const LongListTab = ({ mode, items }) => {
   return (
     <div>
-            <h2 className="mb-4 text-2xl font-semibold text-gray-700">{headings[mode]}</h2>
-            <p className="mb-4 text-gray-600">{descriptions[mode]}</p>
+            <h2 className="mb-4 text-2xl font-semibold text-gray-300">{headings[mode]}</h2>
+            <p className="mb-4 text-gray-400">{descriptions[mode]}</p>
 
 
             {mode === "virtualized" ?

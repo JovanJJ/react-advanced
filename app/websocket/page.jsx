@@ -4,19 +4,19 @@ import WebsocketDemo from "../components/websocket/WebsocketDemo";
 export default function WebsocketPage() {
   return (
     <div>
-      <h1 className="mb-4 text-3xl font-bold text-gray-800">WebSocket (useWebsocket)</h1>
-      <p className="mb-6 max-w-prose text-gray-600 text-sm">
+      <h1 className="mb-4 text-3xl font-bold text-gray-200">WebSocket (useWebsocket)</h1>
+      <p className="mb-6 max-w-prose text-gray-400 text-sm">
         Simple echo chat using the <code>useWebsocket</code> hook and a public echo server
         (wss://echo.websocket.org). Type a message and send to see the echoed
         response appear in the log.
       </p>
-      <div className="rounded-lg bg-white p-6 shadow" style={{ contain: 'content' }}>
+      <div className="rounded-lg bg-[#2A2A2A] p-6 shadow" style={{ contain: 'content' }}>
         <WebsocketDemo />
       </div>
       <div className="flex flex-col md:flex-row gap-8">
         <div className="flex-1 mt-2">
-          <h2 className="text-xl font-semibold mb-2 text-black">useWebsocket Hook Reference</h2>
-          <pre className="bg-gray-100 text-black p-4 rounded text-xs overflow-x-auto">
+          <h2 className="text-xl font-semibold mb-2 text-gray-100">useWebsocket Hook Reference</h2>
+          <pre className="bg-gray-100 text-gray-100 p-4 rounded text-xs overflow-x-auto">
             {`
 import { useState } from "react";
 import { useEffect, useRef } from "react";
@@ -76,8 +76,8 @@ export function useWebsocket(url: string): WebSocketHook {
           </pre>
         </div>
         <div className="flex-1">
-          <h2 className="text-xl font-semibold mb-2 text-black">Usage Example</h2>
-          <pre className="bg-gray-100 text-black p-4 rounded text-xs overflow-x-auto">
+          <h2 className="text-xl font-semibold mb-2 text-gray-100">Usage Example</h2>
+          <pre className="bg-gray-100 text-gray-100 p-4 rounded text-xs overflow-x-auto">
             {`
 import { useWebsocket } from "../lib/hooks/useWebsocket";
 

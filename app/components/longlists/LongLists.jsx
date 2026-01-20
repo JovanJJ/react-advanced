@@ -63,17 +63,17 @@ export default function LongLists({ tab }) {
   return (
     <div>
             <div className="mb-6">
-                <label className="mb-2 block text-sm font-medium text-gray-700">
+                <label className="mb-2 block text-sm font-medium text-gray-300">
                     Filter list by text (useTransition keeps typing responsive)
                 </label>
                 <input
-          className="w-full rounded-md border border-gray-300 px-3 py-2 text-black shadow-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+          className="w-full rounded-md border border-gray-300 px-3 py-2 text-gray-100 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
           type="text"
           value={filterInput}
           onChange={handleFilterChange}
           placeholder="Type to filter..." />
         
-                <p className="mt-2 text-sm text-gray-500">Applied filter: <span className="text-gray-700">{filter || "(none)"}</span></p>
+                <p className="mt-2 text-sm text-gray-500">Applied filter: <span className="text-gray-300">{filter || "(none)"}</span></p>
             </div>
 
             <LongListTab mode={mode} items={filteredItems} />

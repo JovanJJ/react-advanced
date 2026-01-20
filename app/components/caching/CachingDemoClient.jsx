@@ -91,7 +91,7 @@ function InnerClient({
                 {!loading && updating && <span className="text-gray-500">Updating…</span>}
             </div>
 
-            <div className="rounded-md border bg-white">
+            <div className="rounded-md border bg-[#2A2A2A]">
                 <div className="border-b px-3 py-2 text-sm text-gray-500">
                     Items ({effective?.length ?? 0})
                 </div>
@@ -99,7 +99,7 @@ function InnerClient({
                     {(effective ?? []).map((p) =>
           <li key={p.id} className="px-3 py-2">
                             <div className="flex items-center justify-between">
-                                <span className="text-gray-900">{p.title}</span>
+                                <span className="text-gray-100">{p.title}</span>
                                 {/* no optimistic badge in this demo */}
                             </div>
                         </li>

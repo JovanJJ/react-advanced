@@ -10,7 +10,7 @@ export default function TransitionPage() {
 
   return (
     <div>
-      <h1 className="mb-6 text-3xl font-bold text-gray-800">useTransition</h1>
+      <h1 className="mb-6 text-3xl font-bold text-gray-200">useTransition</h1>
       <div className="mb-6 flex flex-wrap gap-3">
         <TabButton
           isActive={tab === "longlists/without"}
@@ -41,7 +41,7 @@ export default function TransitionPage() {
         </TabButton>
       </div>
 
-      <div className="rounded-lg bg-white p-6 shadow-md" style={{ contain: "content" }}>
+      <div className="rounded-lg bg-[#2A2A2A] p-6 shadow-md" style={{ contain: "content" }}>
         <LongLists tab={contentTab} />
       </div>
     </div>);

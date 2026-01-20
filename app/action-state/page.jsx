@@ -50,8 +50,8 @@ export default function ActionStatePage() {
 
   return (
     <div>
-      <h1 className="mb-4 text-3xl font-bold text-gray-800">useActionState</h1>
-      <p className="mb-6 max-w-prose text-gray-600 text-sm">
+      <h1 className="mb-4 text-3xl font-bold text-gray-200">useActionState</h1>
+      <p className="mb-6 max-w-prose text-gray-400 text-sm">
         Compare a form implemented with <code>useActionState</code> vs a manual approach
         using <code>useState</code> + <code>useTransition</code>.
       </p>
@@ -76,7 +76,7 @@ export default function ActionStatePage() {
         </TabButton>
       </div>
 
-      <div className="rounded-lg bg-white p-6 shadow" style={{ contain: "content" }}>
+      <div className="rounded-lg bg-[#2A2A2A] p-6 shadow" style={{ contain: "content" }}>
         {contentTab === "with" ? <ActionStateForm /> : <ManualForm />}
       </div>
 

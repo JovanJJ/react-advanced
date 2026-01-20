@@ -44,12 +44,12 @@ export default function OptimisticComments() {
   }
 
   return (
-    <div className="space-y-4 text-sm text-black">
+    <div className="space-y-4 text-sm text-gray-100">
       <form action={handleSubmit} className="flex gap-2">
         <input
           name="text"
           placeholder="Add comment..."
-          className="flex-1 rounded border bg-white text-gray-900 placeholder-gray-400 px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-blue-500" />
+          className="flex-1 rounded border bg-[#2A2A2A] text-gray-100 placeholder-gray-400 px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-blue-500" />
         
         <button
           type="submit"
@@ -59,7 +59,7 @@ export default function OptimisticComments() {
         </button>
       </form>
       <div className="flex items-center gap-3">
-        <label className="flex items-center gap-2 text-[12px] text-gray-700">
+        <label className="flex items-center gap-2 text-[12px] text-gray-300">
           <input
             type="checkbox"
             checked={simulateError}
@@ -74,7 +74,7 @@ export default function OptimisticComments() {
         {optimisticComments.map((c) =>
         <li
           key={c.id}
-          className={`rounded border px-3 py-2 bg-gray-50 ${
+          className={`rounded border px-3 py-2 bg-[#1F1F1F] ${
           c.pending ? "opacity-60 italic animate-pulse" : ""}`
           }>
           
