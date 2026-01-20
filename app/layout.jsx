@@ -79,98 +79,98 @@ export default function RootLayout({
             </h1>
             <nav>
               <ul className="space-y-3">
-                <li>
+                <li className="group">
                   <Link
                     href="/react-basics"
-                    className="border border-gray-700 block rounded-lg px-4 py-2 text-lg text-gray-300 transition-colors hover:bg-[#333333] hover:text-white"
+                    className="border border-gray-700 block rounded-lg px-4 py-2 text-lg text-gray-300 transition-all hover:bg-[#333333] hover:text-white group-hover:scale-105"
                     onClick={closeSidebar}>
                     1. React Basics (Hooks)
                   </Link>
                 </li>
-                <li>
+                <li className="group">
                   <Link
                     href="/profiler"
-                    className="border border-gray-700 block rounded-lg px-4 py-2 text-lg text-gray-300 transition-colors hover:bg-[#333333] hover:text-white"
+                    className="border border-gray-700 block rounded-lg px-4 py-2 text-lg text-gray-300 transition-all hover:bg-[#333333] hover:text-white group-hover:scale-105"
                     onClick={closeSidebar}>
                     2. Profiler: useCallback, useMemo, React.memo
                   </Link>
                 </li>
-                <li>
+                <li className="group">
                   <Link
                     href="/suspense"
-                    className="border border-gray-700 block rounded-lg px-4 py-2 text-lg text-gray-300 transition-colors hover:bg-[#333333] hover:text-white"
+                    className="border border-gray-700 block rounded-lg px-4 py-2 text-lg text-gray-300 transition-all hover:bg-[#333333] hover:text-white group-hover:scale-105"
                     onClick={closeSidebar}>
                     3. Suspense (data fetching)
                   </Link>
                 </li>
-                <li>
+                <li className="group">
                   <Link
                     href="/lazy"
-                    className="border border-gray-700 block rounded-lg px-4 py-2 text-lg text-gray-300 transition-colors hover:bg-[#333333] hover:text-white"
+                    className="border border-gray-700 block rounded-lg px-4 py-2 text-lg text-gray-300 transition-all hover:bg-[#333333] hover:text-white group-hover:scale-105"
                     onClick={closeSidebar}>
                     4. Lazy Loading (react.lazy & dynamic)
                   </Link>
                 </li>
-                <li>
+                <li className="group">
                   <Link
                     href="/optimistic"
-                    className="border border-gray-700 block rounded-lg px-4 py-2 text-lg text-gray-300 transition-colors hover:bg-[#333333] hover:text-white"
+                    className="border border-gray-700 block rounded-lg px-4 py-2 text-lg text-gray-300 transition-all hover:bg-[#333333] hover:text-white group-hover:scale-105"
                     onClick={closeSidebar}>
                     5. useOptimistic
                   </Link>
                 </li>
-                <li>
+                <li className="group">
                   <Link
                     href="/deferred"
-                    className="border border-gray-700 block rounded-lg px-4 py-2 text-lg text-gray-300 transition-colors hover:bg-[#333333] hover:text-white"
+                    className="border border-gray-700 block rounded-lg px-4 py-2 text-lg text-gray-300 transition-all hover:bg-[#333333] hover:text-white group-hover:scale-105"
                     onClick={closeSidebar}>
                     6. useDeferredValue Hook
                   </Link>
                 </li>
-                <li>
+                <li className="group">
                   <Link
                     href="/transition"
-                    className="border border-gray-700 block rounded-lg px-4 py-2 text-lg text-gray-300 transition-colors hover:bg-[#333333] hover:text-white"
+                    className="border border-gray-700 block rounded-lg px-4 py-2 text-lg text-gray-300 transition-all hover:bg-[#333333] hover:text-white group-hover:scale-105"
                     onClick={closeSidebar}>
                     7. useTransition Hook
                   </Link>
                 </li>
-                <li>
+                <li className="group">
                   <Link
                     href="/caching"
-                    className="border border-gray-700 block rounded-lg px-4 py-2 text-lg text-gray-300 transition-colors hover:bg-[#333333] hover:text-white"
+                    className="border border-gray-700 block rounded-lg px-4 py-2 text-lg text-gray-300 transition-all hover:bg-[#333333] hover:text-white group-hover:scale-105"
                     onClick={closeSidebar}>
                     8. Caching (data fetching)
                   </Link>
                 </li>
-                <li>
+                <li className="group">
                   <Link
                     href="/websocket"
-                    className="border border-gray-700 block rounded-lg px-4 py-2 text-lg text-gray-300 transition-colors hover:bg-[#333333] hover:text-white"
+                    className="border border-gray-700 block rounded-lg px-4 py-2 text-lg text-gray-300 transition-all hover:bg-[#333333] hover:text-white group-hover:scale-105"
                     onClick={closeSidebar}>
                     9. WebSocket (useWebsocket)
                   </Link>
                 </li>
-                <li>
+                <li className="group">
                   <Link
                     href="/action-state"
-                    className="border border-gray-700 block rounded-lg px-4 py-2 text-lg text-gray-300 transition-colors hover:bg-[#333333] hover:text-white"
+                    className="border border-gray-700 block rounded-lg px-4 py-2 text-lg text-gray-300 transition-all hover:bg-[#333333] hover:text-white group-hover:scale-105"
                     onClick={closeSidebar}>
                     10. useActionState
                   </Link>
                 </li>
-                <li>
+                <li className="group">
                   <Link
                     href="/portals"
-                    className="border border-gray-700 block rounded-lg px-4 py-2 text-lg text-gray-300 transition-colors hover:bg-[#333333] hover:text-white"
+                    className="border border-gray-700 block rounded-lg px-4 py-2 text-lg text-gray-300 transition-all hover:bg-[#333333] hover:text-white group-hover:scale-105"
                     onClick={closeSidebar}>
                     11. Portals
                   </Link>
                 </li>
-                <li>
+                <li className="group">
                   <Link
                     href="/compound"
-                    className="border border-gray-700 block rounded-lg px-4 py-2 text-lg text-gray-300 transition-colors hover:bg-[#333333] hover:text-white"
+                    className="border border-gray-700 block rounded-lg px-4 py-2 text-lg text-gray-300 transition-all hover:bg-[#333333] hover:text-white group-hover:scale-105"
                     onClick={closeSidebar}>
                     12. Compound Components
                   </Link>
