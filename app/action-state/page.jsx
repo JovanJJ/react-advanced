@@ -62,7 +62,7 @@ export default function ActionStatePage() {
             setTab("with");
             setContentTab("with");
           }}>
-          
+
           1. With useActionState
         </TabButton>
         <TabButton
@@ -71,7 +71,7 @@ export default function ActionStatePage() {
             setTab("without");
             setContentTab("without");
           }}>
-          
+
           2. Without useActionState
         </TabButton>
       </div>
