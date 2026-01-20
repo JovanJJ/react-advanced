@@ -7,6 +7,12 @@ export default function Home() {
       <p className="mb-6 text-gray-400">Pick a section from the sidebar to get started:</p>
       <ul className="grid grid-cols-1 gap-4 md:grid-cols-2">
         <li>
+          <Link href="/react-basics" className="block rounded-lg bg-[#2A2A2A] p-6 shadow hover:shadow-md">
+            <div className="text-lg font-semibold text-gray-200">React Basics</div>
+            <div className="text-sm text-gray-400">Essential hooks: useState, useEffect, useRef, useContext.</div>
+          </Link>
+        </li>
+        <li>
           <Link href="/deferred" className="block rounded-lg bg-[#2A2A2A] p-6 shadow hover:shadow-md">
             <div className="text-lg font-semibold text-gray-200">useDeferredValue</div>
             <div className="text-sm text-gray-400">Keep input responsive while heavy updates lag behind.</div>
@@ -73,7 +79,7 @@ export default function Home() {
           </Link>
         </li>
       </ul>
-  {null}
+      {null}
     </div>);
 
 }

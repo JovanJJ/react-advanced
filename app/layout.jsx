@@ -37,6 +37,11 @@ export default function RootLayout({
             <nav>
               <ul className="space-y-3">
                 <li>
+                  <Link href="/react-basics" className="block rounded-lg px-4 py-2 text-lg text-gray-300 transition-colors hover:bg-[#333333] hover:text-white">
+                    0. React Basics (Hooks)
+                  </Link>
+                </li>
+                <li>
                   <Link href="/deferred" className="block rounded-lg px-4 py-2 text-lg text-gray-300 transition-colors hover:bg-[#333333] hover:text-white">
                     1. useDeferredValue Hook
                   </Link>
