@@ -38,7 +38,7 @@ export default function RootLayout({
         suppressHydrationWarning
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <div className="flex flex-col md:flex-row h-screen bg-[#1F1F1F] text-gray-100">
-          {/* Hamburger Menu Button - Only visible on mobile */}
+
           <button
             onClick={toggleSidebar}
             className="md:hidden fixed top-4 left-4 z-50 p-2 bg-[#2A2A2A] rounded-lg border border-gray-700 hover:bg-[#333333] transition-colors"
@@ -59,7 +59,7 @@ export default function RootLayout({
             </svg>
           </button>
 
-          {/* Overlay for mobile when sidebar is open */}
+
           {isSidebarOpen && (
             <div
               className="md:hidden fixed inset-0 bg-black bg-opacity-50 z-30"
@@ -67,7 +67,7 @@ export default function RootLayout({
             />
           )}
 
-          {/* Sidebar */}
+
           <aside className={`
             w-72 flex-shrink-0 bg-[#2A2A2A] p-6 shadow-md border-r border-gray-700 overflow-y-auto
             fixed md:relative inset-y-0 left-0 z-40
