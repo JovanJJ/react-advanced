@@ -33,15 +33,15 @@ export default function HeavyWidget({ variant }) {
       data: {
         labels,
         datasets: [
-        {
-          label: "Synthetic Series",
-          data,
-          tension: 0.35,
-          fill: false,
-          borderColor: variant === "lazy" ? "#2563eb" : "#dc2626",
-          backgroundColor: variant === "lazy" ? "#2563eb" : "#dc2626",
-          pointRadius: 2
-        }]
+          {
+            label: "Synthetic Series",
+            data,
+            tension: 0.35,
+            fill: false,
+            borderColor: variant === "lazy" ? "#2563eb" : "#dc2626",
+            backgroundColor: variant === "lazy" ? "#2563eb" : "#dc2626",
+            pointRadius: 2
+          }]
 
       },
       options: {
@@ -66,13 +66,13 @@ export default function HeavyWidget({ variant }) {
           <button
             onClick={() => setPoints((n) => Math.min(200, n + 25))}
             className="rounded bg-gray-900 px-2.5 py-1 text-[11px] font-medium text-white hover:bg-gray-800">
-            
+
             Add points
           </button>
           <button
             onClick={() => setSeed((s) => s + 1)}
             className="rounded bg-blue-600 px-2.5 py-1 text-[11px] font-medium text-white hover:bg-blue-600">
-            
+
             New data
           </button>
         </div>

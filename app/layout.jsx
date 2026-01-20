@@ -31,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <title>React Examples</title>
+        <title>Learning React</title>
         <meta name="description" content="Advanced React Examples" />
       </head>
       <body

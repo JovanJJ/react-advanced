@@ -5,8 +5,8 @@ import { saveComment, saveCommentFail } from "./actions";
 
 
 const initial = [
-{ id: "a1", text: "First post!" },
-{ id: "b2", text: "Optimistic UI feels instant." }];
+  { id: "a1", text: "First post!" },
+  { id: "b2", text: "Optimistic UI feels instant." }];
 
 
 export default function OptimisticComments() {
@@ -50,11 +50,11 @@ export default function OptimisticComments() {
           name="text"
           placeholder="Add comment..."
           className="flex-1 rounded border bg-[#2A2A2A] text-gray-100 placeholder-gray-400 px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-blue-500" />
-        
+
         <button
           type="submit"
           className="rounded bg-gray-900 px-4 py-2 text-white text-sm font-medium hover:bg-gray-800">
-          
+
           Post
         </button>
       </form>
@@ -65,25 +65,24 @@ export default function OptimisticComments() {
             checked={simulateError}
             onChange={(e) => setSimulateError(e.target.checked)}
             className="h-4 w-4" />
-          
+
           Simulate server error
         </label>
         {error && <span className="text-[12px] text-red-600">{error}</span>}
       </div>
       <ul className="space-y-2">
         {optimisticComments.map((c) =>
-        <li
-          key={c.id}
-          className={`rounded border px-3 py-2 bg-[#1F1F1F] ${
-          c.pending ? "opacity-60 italic animate-pulse" : ""}`
-          }>
-          
+          <li
+            key={c.id}
+            className={`rounded border px-3 py-2 bg-[#1F1F1F] ${c.pending ? "opacity-60 italic animate-pulse" : ""}`
+            }>
+
             {c.text}
             {c.pending &&
-          <span className="ml-2 text-[10px] text-gray-500">
+              <span className="ml-2 text-[10px] text-gray-500">
                 {simulateError ? "(failed, not saved)" : "(saving...)"}
               </span>
-          }
+            }
           </li>
         )}
       </ul>
